@@ -9,18 +9,28 @@ const imageArray = [
 
 
 const caroselListDom = document.querySelector('.carosel-list');
+const circleContainerDom = document.querySelector('.circle-container')
 
 let caroselContent = ""
+let circleContent = ""
+
 for(let i = 0; i < imageArray.length; i++) {
     const newImageWrapper = ` <div class="image-wrapper">
                     <img class="image" src="${imageArray[i]}" alt="Prima immagine" />
                 </div>`;
 
-                caroselContent += newImageWrapper;
+
+    const newCircle = `<div class="circle"></div>`
+    
+    
+
+    caroselContent += newImageWrapper;
+    circleContent += newCircle;
 
 }
 
 caroselListDom.innerHTML = caroselContent;
+circleContainerDom.innerHTML = circleContent;
 
 const imageWrapperDom = document.getElementsByClassName('image-wrapper')
 
@@ -41,6 +51,8 @@ rightDom.addEventListener('click', function() {
     imageWrapperDom [activeImage].classList.add('show');
 
     } 
+
+    
 })
 
 

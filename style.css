@@ -61,3 +61,23 @@
     transform: translateY(-50%);
 }
 
+.circle-container{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: silver;
+    margin: 0 5px;
+}
+
+.circle .current{
+    background-color: white;
+}
+
