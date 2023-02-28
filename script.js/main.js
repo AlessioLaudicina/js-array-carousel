@@ -34,8 +34,24 @@ const rightDom = document.querySelector('#right');
 const leftDom = document.querySelector('#left');
 
 rightDom.addEventListener('click', function() {
-    imageWrapperDom[activeImage].classList.remove('show');
+
+    if(activeImage < imageArray.length - 1){
+        imageWrapperDom[activeImage].classList.remove('show');
     activeImage++;
     imageWrapperDom [activeImage].classList.add('show');
+
+    } 
+})
+
+
+leftDom.addEventListener('click', function() {
+
+    if(activeImage > 0){
+        imageWrapperDom[activeImage].classList.remove('show');
+    activeImage--;
+    imageWrapperDom [activeImage].classList.add('show');
+
+    }
+    
 })
 
