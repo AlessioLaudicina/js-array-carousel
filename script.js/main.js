@@ -8,7 +8,7 @@ const imageArray = [
 
 
 
-const caroselDom = document.querySelector('.carosel');
+const caroselListDom = document.querySelector('.carosel-list');
 
 let caroselContent = ""
 for(let i = 0; i < imageArray.length; i++) {
@@ -20,8 +20,10 @@ for(let i = 0; i < imageArray.length; i++) {
 
 }
 
-caroselDom.innerHTML = caroselContent;
+caroselListDom.innerHTML = caroselContent;
 
 const imageWrapperDom = document.getElementsByClassName('image-wrapper')
 
 console.log(imageWrapperDom)
+
+imageWrapperDom [0].classList.add('show');
