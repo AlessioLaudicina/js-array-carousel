@@ -6,9 +6,11 @@ const imageArray = [
     'img/05.webp',
 ]
 
-let caroselContent = ""
+
 
 const caroselDom = document.querySelector('.carosel');
+
+let caroselContent = ""
 for(let i = 0; i < imageArray.length; i++) {
     const newImageWrapper = ` <div class="image-wrapper">
                     <img class="image" src="${imageArray[i]}" alt="Prima immagine" />
@@ -18,7 +20,7 @@ for(let i = 0; i < imageArray.length; i++) {
 
 }
 
-contentDom.innerHTML = caroselContent;
+caroselDom.innerHTML = caroselContent;
 
 const imageWrapperDom = document.getElementsByClassName('image-wrapper')
 
