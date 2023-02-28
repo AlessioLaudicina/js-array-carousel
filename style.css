@@ -5,12 +5,12 @@
 }
 
 .container {
-    width: 50vw;
+    width: 55%;
     margin: auto;
 }
 
 .carosel {
-    height: 70vh;
+    height: 60vh;
     margin-top: 15vh;
     position: relative;
 
