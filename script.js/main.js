@@ -19,3 +19,7 @@ for(let i = 0; i < imageArray.length; i++) {
 }
 
 contentDom.innerHTML = caroselContent;
+
+const imageWrapperDom = document.getElementsByClassName('image-wrapper')
+
+console.log(imageWrapperDom)
