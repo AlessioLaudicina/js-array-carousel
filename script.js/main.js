@@ -26,4 +26,16 @@ const imageWrapperDom = document.getElementsByClassName('image-wrapper')
 
 console.log(imageWrapperDom)
 
-imageWrapperDom [0].classList.add('show');
+let activeImage = 0;
+
+imageWrapperDom [activeImage].classList.add('show');
+
+const rightDom = document.querySelector('#right');
+const leftDom = document.querySelector('#left');
+
+rightDom.addEventListener('click', function() {
+    imageWrapperDom[activeImage].classList.remove('show');
+    activeImage++;
+    imageWrapperDom [activeImage].classList.add('show');
+})
+
