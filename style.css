@@ -77,7 +77,7 @@
     margin: 0 5px;
 }
 
-.circle .current{
-    background-color: white;
+ .current{
+    background-color: red;
 }
 

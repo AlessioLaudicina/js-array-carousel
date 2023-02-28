@@ -33,12 +33,16 @@ caroselListDom.innerHTML = caroselContent;
 circleContainerDom.innerHTML = circleContent;
 
 const imageWrapperDom = document.getElementsByClassName('image-wrapper')
+const circlesDom = document.getElementsByClassName('circle')
+
 
 console.log(imageWrapperDom)
 
 let activeImage = 0;
 
 imageWrapperDom [activeImage].classList.add('show');
+circlesDom [activeImage].classList.add('current');
+
 
 const rightDom = document.querySelector('#right');
 const leftDom = document.querySelector('#left');
@@ -47,8 +51,12 @@ rightDom.addEventListener('click', function() {
 
     if(activeImage < imageArray.length - 1){
         imageWrapperDom[activeImage].classList.remove('show');
+        circlesDom[activeImage].classList.remove('current');
+
     activeImage++;
     imageWrapperDom [activeImage].classList.add('show');
+    circlesDom[activeImage].classList.add('current');
+
 
     } 
 
@@ -59,8 +67,12 @@ rightDom.addEventListener('click', function() {
 leftDom.addEventListener('click', function() {
 
     if(activeImage > 0){
+        circlesDom[activeImage].classList.remove('current');
+
         imageWrapperDom[activeImage].classList.remove('show');
     activeImage--;
+    circlesDom[activeImage].classList.add('current');
+
     imageWrapperDom [activeImage].classList.add('show');
 
     }
