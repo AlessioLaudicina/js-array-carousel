@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 50vw;
+    margin: auto;
+}
+
+.carosel {
+    height: 70vh;
+    margin-top: 15vh;
+
+}
+
+.carosel-list {
+    height: 100%;
+}
+
+.image-wrapper {
+    height: 100%;
+    display: none;
+}
+
+.image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.image-wrapper.show {
+    display: block;
+}
